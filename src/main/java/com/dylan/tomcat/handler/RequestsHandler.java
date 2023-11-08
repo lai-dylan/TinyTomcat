@@ -1,5 +1,7 @@
 package com.dylan.tomcat.handler;
 
+import com.dylan.tomcat.http.Request;
+
 import java.io.*;
 import java.net.Socket;
 import java.nio.charset.StandardCharsets;
@@ -22,6 +24,11 @@ public class RequestsHandler implements Runnable{
     public void run() {
         try {
             InputStream inputStream = socket.getInputStream();
+
+            Request request = new Request(inputStream);
+            System.out.println(request);
+
+
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream, StandardCharsets.UTF_8));
             LOGGER.info("线程{" +Thread.currentThread().getName() +"}接收到来自浏览器的数据为:");
             String msg = null;

@@ -12,8 +12,8 @@ import java.util.logging.Logger;
  * Date: 8/11/2023
  * Description: 用户请求接收中心，只分发，不处理
  */
-public class TinyTomcatV1 {
-    public static final Logger LOGGER = Logger.getLogger(TinyTomcatV1.class.getName());
+public class Main {
+    public static final Logger LOGGER = Logger.getLogger(Main.class.getName());
 
     public static void main(String[] args) throws IOException {
         ServerSocket serverSocket = new ServerSocket(8080);
