@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servlets>
+    <servlet>
+        <servlet-name>CalServlet</servlet-name>
+        <servlet-class>com.dylan.tomcat.servlet.CalculateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CalServlet</servlet-name>
+        <servlet-mapping>/addition</servlet-mapping>
+    </servlet-mapping>
+</servlets>

@@ -6,7 +6,7 @@ import com.dylan.tomcat.http.Response;
 /**
  * Author: DYLAN
  * Date: 8/11/2023
- * Description: TODO
+ * Description: 抽象类，模板设计模式
  */
 public abstract class HttpServlet implements Servlet{
     @Override

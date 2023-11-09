@@ -2,7 +2,6 @@ package com.dylan.tomcat.http;
 
 import com.dylan.utils.request.RequestUtils;
 import lombok.Getter;
-import lombok.Setter;
 import lombok.ToString;
 
 import java.io.BufferedReader;
